@@ -13,5 +13,15 @@ namespace Test
 
             Assert.IsTrue("I" == result);
         }
+
+        [Test]
+        public void GivenA5ReturnAnV()
+        {
+            var romanNumeral = new RomanNumeral();
+
+            string result = romanNumeral.Convert(5);
+
+            Assert.IsTrue("V" == result);
+        }
     }
 }
